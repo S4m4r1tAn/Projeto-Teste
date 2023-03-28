@@ -1,6 +1,8 @@
 import PySimpleGUI as sg
 from datetime import date
 
+sg.theme('SandyBeach')
+
 layout = [[sg.Text('Qual eh o seu nome?'), sg.Input(key='nome')],
           [sg.Text('Em que ano voce nasceu?'), sg.Input(key='ano')],
           [sg.Button('Calcular idade'), sg.Button('Sair')],
